@@ -3,6 +3,20 @@ import "./App.css";
 import PostSection from "./Components/PostSection";
 import ClassPost from "./Components/ClassPost";
 import RedevText from "./Components/RedevText";
+import PersonalIfo from "./Components/PersonalIfo";
+
+const additionalIfo = {
+  email: "rieshietnikov.nikita.1998@mail.ru",
+  email2: "nikitareshetnikov03@gmail.com",
+};
+
+function closureExample(word1) {
+  return function closureExample2(word2) {
+    return word1 + "" + word2;
+  };
+}
+
+let sentence = closureExample("Redev is the ");
 
 function App() {
   return (
@@ -54,6 +68,14 @@ function App() {
         />
         <RedevText />
       </header>
+      <section className="propsTasks">
+        <PersonalIfo
+          age={24}
+          name={"Nikita Reshetnikov"}
+          additionalIfo={additionalIfo.email}
+          sentence={sentence("best!")}
+        ></PersonalIfo>
+      </section>
     </div>
   );
 }
