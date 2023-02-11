@@ -4,6 +4,9 @@ import PostSection from "./Components/PostSection";
 import ClassPost from "./Components/ClassPost";
 import RedevText from "./Components/RedevText";
 import PersonalIfo from "./Components/PersonalIfo";
+import Button from "./Components/Button";
+import HookButton from "./HookButton";
+import TestInfo from "./Components/TestInfo";
 
 const additionalIfo = {
   email: "rieshietnikov.nikita.1998@mail.ru",
@@ -19,6 +22,8 @@ function closureExample(word1) {
 let sentence = closureExample("Redev is the ");
 
 function App() {
+  const callbackFunction = (param) => console.log(param); // параметры снизу вверх
+
   return (
     <div className="App">
       <header className="App-header">
@@ -76,6 +81,11 @@ function App() {
           sentence={sentence("best!")}
         ></PersonalIfo>
       </section>
+      <Button />
+      <HookButton />
+
+      {/* параметры снизу вверх */}
+      <TestInfo callbackFunction={callbackFunction} />
     </div>
   );
 }

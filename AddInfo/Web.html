@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <title>Just additional info</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="headingOne">INFO</h1>
+      <section class="sectionOne _body">
+        <ol class="commands">
+          <li>
+            CTRL/Command + Enter: вставка новой строки непосредственно под
+            текстом независимо от местоположения в текущей строке.
+          </li>
+          <li>
+            ALT/Option +Shift + Вверх/Вниз: дублирование текущей строки вверх
+            или вниз.
+          </li>
+          <li>
+            ALT/Option + Вверх/Вниз: перемещение текущей строки вверх или вниз.
+          </li>
+          <li>
+            ALT/Option + Shift + Вправо: двойное нажатие выделяет все в пределах
+            текущей скобки. Эта опция называется smartSelect.grow (если
+            требуется переназначение).
+          </li>
+          <li>CTRL/Command + ] или [: отступ строки наружу или внутрь.</li>
+        </ol>
+      </section>
+      <h2 class="headingOne"></h2>
+      <section class="_body">
+        <p>
+          При выполнении требований проекта мы часто сталкиваемся с
+          <strong> false, 0, null, undefined </strong> и другими значениями,
+          которые необходимо отфильтровать в массиве. Для этого можно
+          использовать следующие методы:
+        </p>
+        <pre>
+        <code class="code"> const array = [3, 4, undefined, 8, 9, "", false];
+
+        array.filter(Boolean)</code
+      >
+      </pre>
+        <p>
+          В проектах мы часто сталкиваемся с тем, что нам нужно очистить массив.
+          Длину массива можно установить на 0:
+        </p>
+
+        <code class="code">
+          const array = [1, 2, 3];
+          <br />
+          array.length = 0;
+        </code>
+      </section>
+
+      <script src="JsScript.js"></script>
+    </div>
+  </body>
+</html>

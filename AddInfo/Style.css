@@ -1,0 +1,48 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: lightgrey;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #efefef;
+}
+
+._body {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+.headingOne {
+  text-align: center;
+  background-color: rgb(235, 162, 162);
+  padding: 15px;
+  margin: 10px;
+}
+
+.sectionOne {
+  margin-bottom: 20px;
+}
+
+.commands {
+  list-style-type: decimal;
+  list-style-position: inside; /* when using reset file - Because of your padding reset, the numbers are actually off to the left of the page */
+  color: black;
+  line-height: 1.5;
+}
+
+.code {
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(146, 34, 34);
+  border-radius: 25px;
+  height: 150px;
+  min-width: 300px;
+}
